@@ -58,6 +58,8 @@ function SearchForm(props) {
             minTemp: result.mintempC,
             maxTemp: result.maxtempC,
             description: result.hourly[0].weatherDesc[0].value,
+            wind: result.hourly[0].WindGustKmph,
+            rain: result.hourly[0].precipMM,
             iconUrl: result.hourly[0].weatherIconUrl[0].value,
           };
         });

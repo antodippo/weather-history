@@ -17,6 +17,8 @@ function ResultsTable(props) {
               <div>Min: {day.minTemp}°C</div>
               <div>Max: {day.maxTemp}°C</div>
               <div>{day.description}</div>
+              <div>Wind: {day.wind}km/h</div>
+              <div>Rain: {day.rain}mm</div>
               <img
                 className="rounded shadow-md mx-auto mt-0.5"
                 src={day.iconUrl}
