@@ -36,7 +36,8 @@ function SearchForm(props) {
     for (let year = initialYear; year < currentYear; year++) {
       const response = await fetch(
         `https://api.worldweatheronline.com/premium/v1/past-weather.ashx` +
-          `?key=${process.env.REACT_APP_AUTH_TOKEN}` + 
+          //`?key=${process.env.REACT_APP_AUTH_TOKEN}` + 
+          `?key=84325da5be7142e2bdc140917221007` + 
           `&q=${enteredLocation}` + 
           `&date=${year}-${start.substring(5, 7)}-${start.substring(8, 10)}` +
           `&enddate=${year}-${end.substring(5, 7)}-${end.substring(8, 10)}` +
